@@ -4,7 +4,9 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 
-const theme = extendTheme({ config: { initialColorMode: "dark", s: true } });
+const theme = extendTheme({
+  config: { initialColorMode: "light", useSystemColorMode: false },
+});
 render(
   <StrictMode>
     <ChakraProvider theme={theme}>
